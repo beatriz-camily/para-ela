@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>pra você 🎧</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- =========================================================
+     COMO PERSONALIZAR
+     1. Troque [NOME] pelo nome dela (use Ctrl+F no arquivo).
+     2. Troque qualquer texto entre [colchetes] pelo seu texto.
+     3. A lista de músicas fica no script.js, procure "EDITE AQUI".
+     4. Cores e fontes: variáveis em style.css, dentro de :root.
+     ========================================================= -->
+
+<nav class="dots" aria-label="navegação entre seções">
+  <button class="dot" data-target="intro" aria-label="ir para intro"></button>
+  <button class="dot" data-target="pergunta" aria-label="ir para pergunta"></button>
+  <button class="dot" data-target="playlist" aria-label="ir para playlist"></button>
+</nav>
+
+<main>
+
+  <!-- ===== 1. INTRO ===== -->
+  <section id="intro" class="screen">
+    <div class="wrap">
+      <svg class="cassette" viewBox="0 0 200 130" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect x="4" y="4" width="192" height="122" rx="14" fill="none" stroke="var(--cream)" stroke-width="3"/>
+        <rect x="20" y="20" width="160" height="55" rx="6" fill="var(--ink-soft)" stroke="var(--cream)" stroke-width="2"/>
+        <circle class="reel" cx="65" cy="47" r="16" fill="none" stroke="var(--pink)" stroke-width="3"/>
+        <circle cx="65" cy="47" r="4" fill="var(--pink)"/>
+        <circle class="reel" cx="135" cy="47" r="16" fill="none" stroke="var(--yellow)" stroke-width="3"/>
+        <circle cx="135" cy="47" r="4" fill="var(--yellow)"/>
+        <line x1="20" y1="95" x2="180" y2="95" stroke="var(--cream)" stroke-width="2" opacity=".5"/>
+        <rect x="30" y="105" width="50" height="10" rx="3" fill="var(--cream)" opacity=".3"/>
+        <rect x="120" y="105" width="50" height="10" rx="3" fill="var(--cream)" opacity=".3"/>
+      </svg>
+
+      <span class="eyebrow">[algo curto tipo "uma ideia boba" ou "pausa pro café ☕"]</span>
+      <h1>Oi, [NOME] 👋</h1>
+      <p>[Texto leve de abertura — 2 ou 3 linhas. Pode admitir que sabe que anda meio insistente, sem transformar isso em cobrança. O tom aqui é "oi, sem pressão, só queria tentar diferente".]</p>
+      <p class="hint">[opcional: "prometo que essa é a última vez que apareço assim do nada 😅"]</p>
+    </div>
+
+    <div class="arrow-down">continuar<br>↓</div>
+  </section>
+
+  <!-- ===== 2. SIM / NÃO ===== -->
+  <section id="pergunta" class="screen">
+    <div class="wrap">
+      <span class="eyebrow">pergunta rápida</span>
+      <h1>minha proposta ainda tá de pé?</h1>
+      <p>[frase curta opcional antes dos botões]</p>
+
+      <div class="choice-row">
+        <button class="btn btn-primary" id="btn-sim">sim</button>
+        <button class="btn btn-ghost" id="btn-nao">não</button>
+      </div>
+
+      <!-- resposta se ela clicar em NÃO -->
+      <div class="resposta" id="resposta-nao">
+        <p>tudo bem 🙂 valeu por ter lido até aqui — falo sério.</p>
+        <p class="hint">(sem "última chance" de novo, prometo — fico por aqui, sem climão)</p>
+      </div>
+
+      <!-- resposta se ela clicar em SIM -->
+      <div class="resposta" id="resposta-sim">
+        <svg class="sticker" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="60" cy="60" r="56" fill="var(--yellow)" stroke="var(--ink)" stroke-width="4"/>
+          <circle cx="40" cy="52" r="7" fill="var(--ink)"/>
+          <circle cx="80" cy="52" r="7" fill="var(--ink)"/>
+          <ellipse cx="60" cy="82" rx="13" ry="17" fill="var(--ink)"/>
+        </svg>
+        <p style="font-family:var(--font-display); font-style:italic; font-size:1.2rem; color:var(--cream);">não esperava por isso 😳</p>
+        <div class="card">
+          <p>[Aqui entra a sua declaração de verdade — curta e sincera funciona melhor que texto grande. O que você sente, o que você gostaria de propor pra ela.]</p>
+        </div>
+        <div class="choice-row">
+          <button class="btn btn-primary" id="btn-ver-playlist">quero te mostrar uma coisa 🎧</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 3. PLAYLIST ===== -->
+  <section id="playlist" class="screen">
+    <div class="wrap">
+      <span class="eyebrow">mixtape</span>
+      <h1>umas músicas que me lembram você</h1>
+      <p>[frase curta sobre por que resolveu montar essa lista]</p>
+
+      <div class="tracklist" id="tracklist"><!-- preenchido via script.js, veja "EDITE AQUI" --></div>
+
+      <div class="final-msg card">
+        <p>[Mensagem final — pode ser um convite, um agradecimento, o que fizer sentido pra vocês dois.]</p>
+      </div>
+
+      <footer>feito à mão, com uns bugs de propósito 💛</footer>
+    </div>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
