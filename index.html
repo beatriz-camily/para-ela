@@ -3,13 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>pra você 🎧</title>
+<title>com carinho, Bea 🎧</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<div class="bg-fixed" aria-hidden="true"></div>
 
 <!-- =========================================================
      COMO PERSONALIZAR
@@ -42,10 +44,10 @@
         <rect x="120" y="105" width="50" height="10" rx="3" fill="var(--cream)" opacity=".3"/>
       </svg>
 
-      <span class="eyebrow">[algo curto tipo "uma ideia boba" ou "pausa pro café ☕"]</span>
-      <h1>Oi, [NOME] 👋</h1>
-      <p>[Texto leve de abertura — 2 ou 3 linhas. Pode admitir que sabe que anda meio insistente, sem transformar isso em cobrança. O tom aqui é "oi, sem pressão, só queria tentar diferente".]</p>
-      <p class="hint">[opcional: "prometo que essa é a última vez que apareço assim do nada 😅"]</p>
+      <span class="eyebrow">Uma ideia estupidamente idiota, mas com muito carinho, preparada?</span>
+      <h1>Olá minha querida, Luiza.</h1>
+      <p>Infelizmente, sei que estou insistente — mesmo sabendo que não deveria, pois pode ser somente mais um motivo para você se manter distante. Mas eu queria dizer, de alguma forma, o que tanto se passa em meus pensamentos. Toda lembrança que tenho, até a mais banal, você está envolvida nela</p>
+      <p class="hint">Talvez seja a última vez que tento algo com você. Se assim desejar.</p>
     </div>
 
     <div class="arrow-down">continuar<br>↓</div>
@@ -55,8 +57,8 @@
   <section id="pergunta" class="screen">
     <div class="wrap">
       <span class="eyebrow">pergunta rápida</span>
-      <h1>minha proposta ainda tá de pé?</h1>
-      <p>[frase curta opcional antes dos botões]</p>
+      <h1>Minha proposta ainda está de pé?</h1>
+      <p>Fiz várias, mas a mais importante é ter uma noite somente eu e você.</p>
 
       <div class="choice-row">
         <button class="btn btn-primary" id="btn-sim">sim</button>
@@ -65,21 +67,26 @@
 
       <!-- resposta se ela clicar em NÃO -->
       <div class="resposta" id="resposta-nao">
-        <p>tudo bem 🙂 valeu por ter lido até aqui — falo sério.</p>
-        <p class="hint">(sem "última chance" de novo, prometo — fico por aqui, sem climão)</p>
+        <p>Bom, eu tinha 95% de certeza que essa seria a resposta, mas ainda tinha expectativas nos outros 5%. 🫪</p>
+        <div class="card">
+          <p>Tudo bem, meu bem. Obrigada por ter lido até aqui — adorei passar parte da minha vida tendo poucas conversas ou poucos momentos com você.</p>
+        </div>
+        <p class="hint">Mas tem certeza?</p>
+        <p>huuuuuuuum, então ta bom</p>
+        <button class="btn btn-primary" id="btn-ver-playlist">quero te mostrar uma coisa 🎧</button>
       </div>
 
       <!-- resposta se ela clicar em SIM -->
       <div class="resposta" id="resposta-sim">
-        <svg class="sticker" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <!-- <svg class="sticker" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <circle cx="60" cy="60" r="56" fill="var(--yellow)" stroke="var(--ink)" stroke-width="4"/>
           <circle cx="40" cy="52" r="7" fill="var(--ink)"/>
           <circle cx="80" cy="52" r="7" fill="var(--ink)"/>
           <ellipse cx="60" cy="82" rx="13" ry="17" fill="var(--ink)"/>
-        </svg>
-        <p style="font-family:var(--font-display); font-style:italic; font-size:1.2rem; color:var(--cream);">não esperava por isso 😳, estou surpresa</p>
+        </svg> -->
+        <p style="font-family:var(--font-display); font-style:italic; font-size:1.2rem; color:var(--cream);">não esperava por isso , estou surpresa e nervosa.</p>
         <div class="card">
-          <p>[Aqui entra a sua declaração de verdade — curta e sincera funciona melhor que texto grande. O que você sente, o que você gostaria de propor pra ela.]</p>
+          <p>Dessa vez, quero que deixe cada detalhe da noite aos meus cuidados, e que sua única preocupação, seja somente  se arrumar.</p>
         </div>
         <div class="choice-row">
           <button class="btn btn-primary" id="btn-ver-playlist">quero te mostrar uma coisa 🎧</button>
@@ -98,7 +105,7 @@
       <div class="tracklist" id="tracklist"><!-- preenchido via script.js, veja "EDITE AQUI" --></div>
 
       <div class="final-msg card">
-        <p>[Mensagem final — pode ser um convite, um agradecimento, o que fizer sentido pra vocês dois.]</p>
+        <p>[Mensagem final ]</p>
       </div>
 
       <footer>feito à mão, com uns bugs de propósito 💛</footer>
