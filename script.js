@@ -39,8 +39,10 @@ document.getElementById('btn-sim').addEventListener('click', () => {
   respSim.classList.add('show');
 });
 
-document.getElementById('btn-ver-playlist').addEventListener('click', () => {
-  document.getElementById('playlist').scrollIntoView({ behavior: 'smooth' });
+document.querySelectorAll('.btn-ver-playlist').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.getElementById('playlist').scrollIntoView({ behavior: 'smooth' });
+  });
 });
 
 // navegação por pontinhos + destaque da seção ativa
