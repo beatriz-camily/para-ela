@@ -1,10 +1,25 @@
 // ===================== EDITE AQUI =====================
 // Troque pelas músicas de verdade. "nota" é o motivo/lembrança.
 const songs = [
-  { title: "[Nome da música 1]", artist: "[Artista]", note: "[por que essa lembra ela]" },
-  { title: "[Nome da música 2]", artist: "[Artista]", note: "[por que essa lembra ela]" },
-  { title: "[Nome da música 3]", artist: "[Artista]", note: "[por que essa lembra ela]" },
-  { title: "[Nome da música 4]", artist: "[Artista]", note: "[por que essa lembra ela]" },
+  { title: "Call Me", artist: "Zach Templar", note: "[por que essa lembra ela]" },
+  { title: "Saudade", artist: "Luiz Lins, Konai, Mazilli", note: "[por que essa lembra ela]" },
+  { title: "Rainy Days", artist: "V", note: "[por que essa lembra ela]" },
+  { title: "Blue", artist: "V", note: "[por que essa lembra ela]" },
+  { title: "Love Me Again", artist: "V", note: "[por que essa lembra ela]" },
+  { title: "Seven", artist: "Jung Kook, Latto", note: "[por que essa lembra ela]" },
+  { title: "Taste", artist: "Junny", note: "[por que essa lembra ela]" },
+  { title: "Invitation", artist: "Junny, Gaeko", note: "[por que essa lembra ela]" },
+  { title: "Bite Me", artist: "Enhypen", note: "[por que essa lembra ela]" },
+  { title: "Deleita", artist: "Mariana Volker", note: "[por que essa lembra ela]" },
+  { title: "Still With You", artist: "Jung Kook", note: "[por que essa lembra ela]" },
+  { title: "Stiil Loving You", artist: "Scorpions", note: "[por que essa lembra ela]" },
+  { title: "Oi Sumida", artist: "MC Menor da L, Macih", note: "[por que essa lembra ela]" },
+  { title: "Bloco dos Apaixonados", artist: "Sotam, Carla Sol, Rob, Pulim", note: "[por que essa lembra ela]" },
+  { title: "Distrimia", artist: "Casuarina", note: "[por que essa lembra ela]" },
+  { title: "Pandora", artist: "Sazack", note: "[por que essa lembra ela]" },
+  { title: "Home", artist: "BTS", note: "[por que essa lembra ela]" },
+  { title: "Pampa", artist: "CountryBeat, MC Daniel", note: "[por que essa lembra ela]" },
+{ title: "On", artist: "BTS", note: "[por que essa lembra ela]" },
 ];
 // ========================================================
 
