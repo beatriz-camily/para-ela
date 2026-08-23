@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>com carinho, Bea 🎧</title>
+<title>com carinho, Bea</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -13,18 +13,11 @@
 
 <div class="bg-fixed" aria-hidden="true"></div>
 
-<!-- =========================================================
-     COMO PERSONALIZAR
-     1. Troque [NOME] pelo nome dela (use Ctrl+F no arquivo).
-     2. Troque qualquer texto entre [colchetes] pelo seu texto.
-     3. A lista de músicas fica no script.js, procure "EDITE AQUI".
-     4. Cores e fontes: variáveis em style.css, dentro de :root.
-     ========================================================= -->
-
 <nav class="dots" aria-label="navegação entre seções">
   <button class="dot" data-target="intro" aria-label="ir para intro"></button>
   <button class="dot" data-target="pergunta" aria-label="ir para pergunta"></button>
   <button class="dot" data-target="playlist" aria-label="ir para playlist"></button>
+  <button class="dot" data-target="final" aria-label="ir para o final"></button>
 </nav>
 
 <main>
@@ -69,7 +62,7 @@
       <div class="resposta" id="resposta-nao">
         <p>Bom, eu tinha 95% de certeza que essa seria a resposta, mas ainda tinha expectativas nos outros 5%. 🫪</p>
         <div class="card">
-          <p>Tudo bem, meu bem. Obrigada por ter lido até aqui — adorei passar parte da minha vida tendo poucas conversas ou poucos momentos com você.</p>
+          <p>Tudo bem, meu bem. Obrigada por ter lido até aqui — adorei passar parte da minha vida tendo poucas conversas e poucos momentos com você. Sinceramente, será uma lembrança maravilhosa, desse ano.</p>
         </div>
         <p class="hint">Mas tem certeza?</p>
         <p>huuuuuuuum, então ta bom</p>
@@ -96,21 +89,167 @@
   </section>
 
   <!-- ===== 3. PLAYLIST ===== -->
-  <section id="playlist" class="screen">
-    <div class="wrap">
-      <span class="eyebrow">mixtape</span>
-      <h1>Umas músicas que me lembram você</h1>
-      <p>[frase curta sobre por que resolveu montar essa lista]</p>
+<section id="playlist" class="screen">
 
-      <div class="tracklist" id="tracklist"><!-- preenchido via script.js, veja "EDITE AQUI" --></div>
+  <!-- Fundo dinâmico da música -->
+  <div class="playlist-bg" id="playlist-bg" aria-hidden="true"></div>
+  <div class="playlist-bg-overlay" aria-hidden="true"></div>
 
-      <div class="final-msg card">
-        <p>Coloquei todo o meu esforço nesse pequeno site, pois em minha concepção, isso mostra todo o esforço que tenho em ainda ter algum sentimento por você, então, foi consideravelmente grande, mesmo parecendo pequeno, ele possui muitos detalhes, basta observar.</p>
+  <div class="wrap playlist-wrap">
+
+    <span class="eyebrow">mixtape</span>
+
+    <h1>Umas músicas que me lembram você</h1>
+
+    <p>
+      Algumas músicas acabaram ficando ligadas a você de um jeito que eu nem sei explicar direito.
+    </p>
+
+
+    <!-- =========================================
+         PLAYER
+    ========================================== -->
+    <div class="music-player" id="music-player">
+
+      <!-- CAPA -->
+      <div class="player-cover-container">
+
+        <img
+          src=""
+          alt="Capa da música"
+          class="player-cover"
+          id="player-cover"
+        >
+
+        <div class="playing-bars" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
       </div>
 
-      <footer>feito à mão, com uns bugs de propósito 💛</footer>
+
+      <!-- INFO -->
+      <div class="player-info">
+
+        <span class="player-label">
+          TOCANDO AGORA
+        </span>
+
+        <h2 id="player-title">
+          Call Me
+        </h2>
+
+        <p id="player-artist">
+          Zach Templar
+        </p>
+
+      </div>
+
+
+      <!-- PROGRESSO -->
+      <div class="player-progress">
+
+        <span id="current-time">
+          0:00
+        </span>
+
+        <div
+          class="progress-track"
+          id="progress-track"
+        >
+          <div
+            class="progress-fill"
+            id="progress-fill"
+          ></div>
+        </div>
+
+        <span id="duration">
+          0:00
+        </span>
+
+      </div>
+
+
+      <!-- CONTROLES -->
+      <div class="player-controls">
+
+        <button
+          class="player-btn player-btn-small"
+          id="prev-btn"
+          aria-label="Música anterior"
+        >
+          &#9198;
+        </button>
+
+        <button
+          class="player-btn player-btn-play"
+          id="play-btn"
+          aria-label="Tocar música"
+        >
+          ▶
+        </button>
+
+        <button
+          class="player-btn player-btn-small"
+          id="next-btn"
+          aria-label="Próxima música"
+        >
+          &#9197;
+        </button>
+
+      </div>
+
+
+      <!-- SUA MENSAGEM -->
+      <div class="player-message">
+
+        <span>
+          por que essa?
+        </span>
+
+        <p id="player-note">
+          [por que essa música lembra ela]
+        </p>
+
+      </div>
+
     </div>
-  </section>
+
+
+    <!-- ÁUDIO -->
+    <audio
+      id="audio-player"
+      preload="metadata"
+    ></audio>
+
+</section>
+
+<section id="final" class="screen">
+   <div class="wrap">
+    <span class="eyebrow">Declaração ou Desabafo?</span>
+      <!-- <h1>Minha proposta ainda está de pé</h1> -->
+      <p>a - A primiera vez que vi você pessoalmente, foi como ter visto as letras de uma canção e a sensação de escutar uma bela melodia a primeira vez, foi sensacional, espero não esquecer esse sentimento, pois se não for com você, será a base de como eu quero que seja com outra pessoa. A sensação de tocar  seus lábios pela primeira vez, nossa, como posso dizer? foi mais que maravilhoso, foi magnifico; a sensação de te abraçar, sempre me pegava muito; olhar nos teus olhos, ver aquela cor castanha profunda e brilhante, seus cachos emaranhados; e meu deus, te ver de vestido, é uma das minhas memórias preferida de você;  </p>
+    <div class="final-msg card">
+      
+      <p>
+        Coloquei todo o meu esforço nesse pequeno site, pois em minha concepção,
+        isso mostra todo o esforço que tinha em ainda ter algum sentimento por você,
+        então, foi consideravelmente grande, mesmo parecendo pequeno, ele possui
+        muitos detalhes, basta observar.
+      </p>
+    </div>
+   </div>
+
+
+    <footer>
+      feito à mão, com uns bugs de propósito 💛
+    </footer>
+
+  </div>
+</section>
 
 </main>
 
