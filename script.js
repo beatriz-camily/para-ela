@@ -5,7 +5,7 @@ const songs = [
   {
     title: "Você Não Me Ensinou A Te Esquecer",
     artist: "Fernando Mendes",
-    note: "Acho que essa música resume boa parte dos meus sentimentos, por agora, não completamente, mas alguns sim.",
+    note: "",
     audio: "audio/voce-nao-me-ensinou-a-te-esquecer.mp3",
     cover: "img/voce-nao-me-ensinou-a-te-esquecer.jpg",
     background: "img/voce-nao-me-ensinou-a-te-esquercer-bg.gif"
@@ -41,7 +41,7 @@ const songs = [
   {
     title: "All I Wanted",
     artist: "Paramore",
-    note: "A frase All I wanted was you, já diz tudo - não acha?",
+    note: "",
     audio: "audio/all-i-wanted.mp3",
     cover: "img/all-i-wanted.jpg",
     background: "img/all-i-wanted-bg.gif"
@@ -50,7 +50,7 @@ const songs = [
   {
     title: "Gostava Tanto de Você",
     artist: "Tim Maia",
-    note: "[seu texto aqui]",
+    note: "",
     audio: "audio/gostava-tanto-de-voce.mp3",
     cover: "img/gostava-tanto-de-voce.jpg",
     background: "img/gostava-tanto-de-voce-bg.gif"
@@ -59,7 +59,7 @@ const songs = [
   {
     title: "Onde Anda Você",
     artist: "Vinicius de Moraes & Toquinho",
-    note: "[seu texto aqui]",
+    note: "",
     audio: "audio/onde-anda-voce.mp3",
     cover: "img/onde-anda-voce.jpg",
     background: "img/onde-anda-voce-bg.gif"
@@ -68,7 +68,7 @@ const songs = [
   {
     title: "Saudade",
     artist: "Luiz Lins, Konai, Mazilli",
-    note: "Talvez o próprio nome já explique parte do motivo de ela estar aqui.",
+    note: "Talvez o próprio nome já explique parte do motivo dela estar aqui.",
     audio: "audio/saudade.mp3",
     cover: "img/saudade.jpg",
     background: "img/saudade-bg.gif"
@@ -77,7 +77,7 @@ const songs = [
   {
     title: "Rainy Days",
     artist: "V",
-    note: "Essa tem exatamente aquela sensação de ficar pensando demais em alguém num dia quieto.",
+    note: "",
     audio: "audio/rainy-days.mp3",
     cover: "img/v.jpg",
     background: "img/v-bg.gif"
@@ -86,7 +86,7 @@ const songs = [
   {
     title: "Blue",
     artist: "V",
-    note: "[seu texto aqui]",
+    note: "",
     audio: "audio/blue.mp3",
     cover: "img/v.jpg",
     background: "img/v-bg.gif"
@@ -95,7 +95,7 @@ const songs = [
   {
     title: "Love Me Again",
     artist: "V",
-    note: "[seu texto aqui]",
+    note: "",
     audio: "audio/love-me-again.mp3",
     cover: "img/v.jpg",
     background: "img/v-bg.gif"
@@ -104,7 +104,7 @@ const songs = [
   {
     title: "Pela Luz Dos Olhos Teus",
     artist: "Miúcha, Antonio Carlos Jobim",
-    note: "[seu texto aqui]",
+    note: "",
     audio: "audio/pela-luz-dos-olhos-teus.mp3",
     cover: "img/pela-luz-dos-olhos-teus.jpg",
     background: "img/pela-luz-dos-olhos-teus-bg.gif"
@@ -113,7 +113,7 @@ const songs = [
   {
     title: "Seven",
     artist: "Jung Kook, feat. Latto",
-    note: "[seu texto aqui]",
+    note: "",
     audio: "audio/seven.mp3",
     cover: "img/seven.jpg",
     background: "img/seven-bg.gif"
@@ -122,7 +122,7 @@ const songs = [
   {
     title: "Taste",
     artist: "Junny",
-    note: "[seu texto aqui]",
+    note: "",
     audio: "audio/taste.mp3",
     cover: "img/taste.jpg",
     background: "img/taste-bg.gif"
@@ -131,7 +131,7 @@ const songs = [
   {
     title: "Invitation",
     artist: "Junny, Gaeko",
-    note: "[seu texto aqui]",
+    note: "",
     audio: "audio/invitation.mp3",
     cover: "img/invitation.jpg",
     background: "img/invitation-bg.gif"
@@ -140,7 +140,7 @@ const songs = [
   {
     title: "Bite Me",
     artist: "Enhypen",
-    note: "[seu texto aqui]",
+    note: "",
     audio: "audio/bite-me.mp3",
     cover: "img/bite-me.jpg",
     background: "img/bite-me-bg.gif"
@@ -149,7 +149,7 @@ const songs = [
   {
     title: "Deleita",
     artist: "Mariana Volker",
-    note: "[seu texto aqui]",
+    note: "",
     audio: "audio/deleita.mp3",
     cover: "img/deleita.jpg",
     background: "img/deleita-bg.gif"
@@ -158,7 +158,7 @@ const songs = [
   {
     title: "Still With You",
     artist: "Jung Kook",
-    note: "[seu texto aqui]",
+    note: "",
     audio: "audio/still-with-you.mp3",
     cover: "img/still-with-you.jpg",
     background: "img/still-with-you-bg.gif"
@@ -167,7 +167,7 @@ const songs = [
   {
     title: "Better With You",
     artist: "Jeff Bernat",
-    note: "[seu texto aqui]",
+    note: "",
     audio: "audio/better-with-you.mp3",
     cover: "img/better-with-you.jpg",
     background: "img/better-with-you-bg.gif"
@@ -176,7 +176,7 @@ const songs = [
   {
     title: "Still Loving You",
     artist: "Scorpions",
-    note: "[seu texto aqui]",
+    note: "",
     audio: "audio/still-loving-you.mp3",
     cover: "img/still-loving-you.jpg",
     background: "img/still-loving-you-bg.gif"
@@ -185,7 +185,7 @@ const songs = [
   {
     title: "Oi Sumida",
     artist: "MC Menor da L, Macih",
-    note: "[seu texto aqui]",
+    note: "",
     audio: "audio/oi-sumida.mp3",
     cover: "img/oi-sumida.jpg",
     background: "img/oi-sumida-bg.gif"
@@ -194,7 +194,7 @@ const songs = [
   {
     title: "Bloco dos Apaixonados",
     artist: "Sotam, Carla Sol, Rob, Pulim",
-    note: "[seu texto aqui]",
+    note: "",
     audio: "audio/bloco-dos-apaixonados.mp3",
     cover: "img/bloco-dos-apaixonados.jpg",
     background: "img/bloco-dos-apaixonados-bg.gif"
@@ -203,7 +203,7 @@ const songs = [
   {
     title: "Distrimia",
     artist: "Casuarina",
-    note: "[seu texto aqui]",
+    note: "",
     audio: "audio/distrimia.mp3",
     cover: "img/distrimia.jpg",
     background: "img/distrimia-bg.gif"
@@ -212,7 +212,7 @@ const songs = [
   {
     title: "Pandora",
     artist: "Sazack",
-    note: "[seu texto aqui]",
+    note: "",
     audio: "audio/pandora.mp3",
     cover: "img/pandora.jpg",
     background: "img/pandora-bg.gif"
@@ -221,7 +221,7 @@ const songs = [
    {
     title: "Stay With Me",
     artist: "Miki Matsubara",
-    note: "[seu texto aqui]",
+    note: "",
     audio: "audio/stay-with-me.mp3",
     cover: "img/stay-with-me.jpg",
     background: "img/stay-with-me-bg.gif"
@@ -230,7 +230,7 @@ const songs = [
   {
     title: "Sozinho",
     artist: "Caetano Valoso",
-    note: "[seu texto aqui]",
+    note: "",
     audio: "audio/sozinho.mp3",
     cover: "img/sozinho.jpg",
     background: "img/sozinho-bg.gif"
@@ -239,7 +239,7 @@ const songs = [
   {
     title: "Home",
     artist: "BTS",
-    note: "[seu texto aqui]",
+    note: "",
     audio: "audio/home.mp3",
     cover: "img/home.jpg",
     background: "img/home-bg.gif"
@@ -248,7 +248,7 @@ const songs = [
   {
     title: "Pampa",
     artist: "CountryBeat, MC Daniel",
-    note: "[seu texto aqui]",
+    note: "não tem explicação, somente lembra",
     audio: "audio/pampa.mp3",
     cover: "img/pampa.jpg",
     background: "img/pampa-bg.gif"
@@ -257,7 +257,7 @@ const songs = [
   {
     title: "Quando Bate Aquela Saudade",
     artist: "Rubel",
-    note: "[seu texto aqui]",
+    note: "",
     audio: "audio/quando-bate-aquela-saudade.mp3",
     cover: "img/quando-bate-aquela-saudade.jpg",
     background: "img/quando-bate-aquela-saudade-bg.gif"
@@ -266,7 +266,7 @@ const songs = [
   {
     title: "On",
     artist: "BTS",
-    note: "Eu fiquei surpresa quando colocou uma música do BTS para escutar no carro, pois eu tinha muito preconceito com gaypop, porém me fez gostar ainda mais de tu, infelizmente.",
+    note: "",
     audio: "audio/on.mp3",
     cover: "img/home.jpg",
     background: "img/home-bg.gif"
