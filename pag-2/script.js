@@ -2,14 +2,6 @@
 // Troque pelas músicas de verdade. "nota" é o motivo/lembrança.
 const songs = [
 
-  {
-    title: "Você Não Me Ensinou A Te Esquecer",
-    artist: "Fernando Mendes",
-    note: "",
-    audio: "audio/voce-nao-me-ensinou-a-te-esquecer.mp3",
-    cover: "img/voce-nao-me-ensinou-a-te-esquecer.jpg",
-    background: "img/voce-nao-me-ensinou-a-te-esquercer-bg.gif"
-  },
 
    {
     title: "Call Me",
@@ -45,6 +37,15 @@ const songs = [
     audio: "audio/all-i-wanted.mp3",
     cover: "img/all-i-wanted.jpg",
     background: "img/all-i-wanted-bg.gif"
+  },
+
+  {
+    title: "Você Não Me Ensinou A Te Esquecer",
+    artist: "Fernando Mendes",
+    note: "",
+    audio: "audio/voce-nao-me-ensinou-a-te-esquecer.mp3",
+    cover: "img/voce-nao-me-ensinou-a-te-esquecer.jpg",
+    background: "img/voce-nao-me-ensinou-a-te-esquercer-bg.gif"
   },
 
   {
